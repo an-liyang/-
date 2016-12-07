@@ -1,0 +1,421 @@
+//头部开始
+.topbody{
+  height: 50px;
+  line-height: 50px;
+  background-color: #F7F7F7;
+  border-bottom: 1px solid #D8D8D8;
+}
+.header .head_left{
+  float: left;
+  margin-top: 5px;
+}
+.head_right li{
+  float: right;
+  padding-right: 10px;
+  margin-right: 12px;
+  margin-top: 5px;
+  span{
+    display: inline-block;
+    margin-left: 20px;
+  }
+}
+//导航部分
+.daohang{
+  border-top: 1px solid #D2D2D2;
+  height: 60px;
+  background-image: url(../images/nav_bg.png);
+  overflow: hidden;
+
+ .daohang-nav li {
+   background: url(../images/nav_bg-line.png) no-repeat right 0;
+   float: left;
+   a {
+     padding: 0 37px;
+     height: 54px;
+     line-height: 54px;
+     display: block;
+     font-weight: 700;
+   }
+   a:hover{
+     color: #FFFFFF;
+     background-color: #f60;
+   }
+ }
+}
+//二维码
+.nodeSmall {
+  width: 50px;
+  height: 50px;
+  background: url(../img/bgs.png) no-repeat -159px -51px;
+  position: fixed;
+  right: 10px;
+  top: 40%;
+  z-index: 999;
+  a {
+  display: block;
+  width: 50px;
+  height: 50px;
+}
+  .erweima {
+    position: absolute;
+    top: 0;
+    left: -150px;
+    z-index: 999;
+  }
+}
+//banner 开始
+.banner{
+  padding-left: 0;
+  .bannerLeft{
+    li{
+      margin-top: 10px;
+      border-bottom: 1px solid #D8D8D8;
+      box-shadow: 0 0 5px 2px black;
+      background-color: #F7F7F7;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        span{
+          display: block;
+        }
+      }
+      a:hover{
+        background-color: #f60;
+        color: white;
+      }
+    }
+  }
+
+//轮播
+.bannerMiddle {
+  margin-top: 58px;
+  padding: 0;
+  width:750px;
+  overflow: hidden;
+  position: relative;
+ .imgBox {
+  width: 1000%;
+  transform: translateX(-10%);
+ li {
+  float: left;
+  width: 10%;
+
+  img {
+  width: 100%;
+  display: block;
+}
+}}
+ .points {
+
+  position: absolute;
+  left: 50%;
+  bottom: 15px;
+  transform: translate(-50%);
+
+  li {
+    cursor: pointer;
+    font-family: fantasy;
+    font-size: 20px;
+  float: left;
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  margin-right: 16px;
+}
+ li:last-child {
+  margin-right: 0;
+}
+ li.current {
+  background-color: #fff;
+}
+ }
+ }
+//banner右边
+.bannerRight{
+  height: 422px;
+  width: 300px;
+  padding: 0;
+  margin-left: 10px;
+  div{
+    width: 100%;
+    height: 31%;
+    margin-top: 10px;
+    background-color: #F7F7F7;
+    box-shadow:0 0 5px 2px black ;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+}
+//banner结束
+
+/* 产品模块*/
+.product{
+  margin: 40px auto;
+  box-shadow: 0 0 10px 5px;
+  padding-top:50px;
+  padding-bottom:50px;
+  background-color: #f1f1f1;
+}
+/* 产品模块导航*/
+.product-tabs {
+  border-bottom: 1px solid #ccc;
+}
+.product-tabs > li {
+  float: left;
+
+}
+.product-tabs > li > a {
+  margin-right: 2px;
+  line-height: 2;
+  border-bottom: 2px solid transparent;
+  font-size:14px;
+
+}
+.product-tabs > li > a:hover {
+  border-bottom: 2px solid red;
+  color:#333;
+}
+.product-tabs > li.active > a,
+.product-tabs > li.active > a:hover,
+.product-tabs > li.active > a:focus {
+  color: #555;
+  cursor: default;
+  border-bottom: 2px solid red;
+
+}
+/* 水平方向上超出的部分添加滚动条*/
+.nav-tab-parent{
+  overflow-x: auto;
+}
+/* 产品模块 tab栏 内容区域*/
+.product{
+  font-family: "Microsoft Yahei";
+}
+.product .tab-content .row>div{
+  height:170px;
+}
+.product .tab-content .row>div .product-in{
+  height:150px;
+  background-color: #fff;
+  margin-top:20px;
+  box-shadow: 0 0 10px 2px #ccc;
+  position: relative;
+}
+.product .product-in .product-left{
+  height: 150px;
+  border-right:1px dashed #ccc;
+  /* 让盒子绝缘*/
+  overflow: hidden;
+  padding-left:15px;
+  padding-right:15px;
+}
+.product  .product-left h4{
+  text-align: center;
+  font-size:18px;
+  height:20px;
+  overflow: hidden;
+
+}
+.product  .product-left>div{
+  width: 50%;
+  font-size:14px;
+
+}
+.product  .product-left>div p{
+  height:16px;
+  overflow: hidden;
+}
+.product .product-in .product-right{
+  width: 108px;
+  height: 150px;
+  float: right;
+  text-align: center;
+  font-size:14px;
+  position: relative;
+}
+/* 产品右侧模块*/
+.product .product-in .product-right p:nth-child(1){
+  color:red;
+  margin-top:30px;
+}
+.product .product-in .product-right p:nth-child(1) span{
+  font-size:45px;
+  font-weight: 700;
+}
+.product .product-in .product-right .tips{
+  position: absolute;
+  top:10px;
+  width: 100%;
+
+}
+
+.product .product-in .product-right .tips a{
+  font-size:16px;
+  line-height: 16px;
+  border:1px solid red;
+  color:red;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+.product .product-in .product-right .tips .bao{
+  margin-right:15px;
+}
+
+.product .product-in .product-right::before,
+.product .product-in .product-right::after{
+  width: 10px;
+  height: 10px;
+  content:"";
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  position: absolute;
+  left:-5px;
+  top:-5px;
+  box-shadow:0 -2px 2px #d8d8d8 inset
+}
+.product .product-in .product-right::after {
+  bottom:-5px;
+  top:auto;
+  box-shadow:0 2px 2px #d8d8d8 inset
+}
+
+/* current*/
+
+.product .row>div .product-in.current{
+  background-color: red;
+  color:#fff;
+}
+
+.product-in.current .product-right p:nth-child(1){
+  color:#fff;
+}
+
+.product-in .product-left  .pull-right .progress{
+  height:10px;
+}
+//book开始
+.book,.pen,.juan,.other{
+  box-shadow: 0 0 5px 2px ;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  background-color: #F1F1F1;
+  h4{
+    padding-left: 20px;
+    font-family: Microsoft Yahei, sans-serif;
+    font-size: 36px;
+    border: 1px solid #000;
+    color: #000;
+  }
+  >div{
+
+    float: left;
+    overflow: hidden;
+    position: relative;
+    margin: 40px 50px 0 ;
+    width: 320px;
+    height: 320px;
+  div{
+    display: none;
+    width: 100%;
+    background-color: #000;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    bottom: -100px;
+    p{
+      color: #fff;
+      padding-left: 20px;
+     span{
+       color: deeppink;
+     }
+    }
+  }
+  }
+}
+
+
+//底部
+.bottom2{
+  height: 200px;
+  font-size: 12px;
+  margin-top: 20px;
+  padding-bottom: 40px;
+  border-top: 1px solid #E5E5E5;
+  text-align: center;
+  box-shadow: 0  0 5px 1px ;
+}
+.bottom2 p{
+
+  height: 25px;
+  line-height: 25px;
+
+}
+
+//回到顶部
+.go-top a {
+  height: 195px;
+  width: 150px;
+  display: inline-block;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  z-index: 999;
+  background: url("../images/gotop.png");
+  display: none;
+  cursor: pointer;
+}
+//鼠标样式
+.star{
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  border-radius: 50% ;
+  pointer-events:none
+}
+.contact{
+  position: fixed;
+  left: 20px;
+  bottom: 100px;
+ .qq{
+  background: url("../images/qq0.png") no-repeat center;
+  background-color: #DEDEDE;
+  height: 45px;
+  width: 45px;
+  margin-bottom: 3px;
+  cursor: pointer;
+  z-index: 9000;
+  position: relative;
+  opacity: 0;
+}
+ .qq:hover{
+  background: url("../images/qq.png") no-repeat center;
+  z-index: 9000;
+  position: relative;
+}
+ .phone{
+  cursor: pointer;
+  background: url("../images/indexcall2.png") no-repeat -103px ;
+  background-color: #DEDEDE;
+  height: 45px;
+  width: 45px;
+  z-index: 9000;
+  position: relative;
+  opacity: 0;
+}
+ .phone:hover{
+  background: url("../images/indexcall1.png") center no-repeat;
+  z-index: 9000;
+  position: relative;
+}
+}
